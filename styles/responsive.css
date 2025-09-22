@@ -1,0 +1,59 @@
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: flex;
+    }
+
+    nav ul {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        flex-direction: column;
+        background-color: #2c5e1a;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        padding: 1rem 0;
+    }
+
+    nav ul.active {
+        left: 0;
+    }
+
+    nav ul li {
+        margin: 1rem 0;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+
+    .hero {
+        padding: 3rem 0;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .features,
+    .testimonials {
+        padding: 2rem 0;
+    }
+
+    .features h2,
+    .testimonials h2 {
+        font-size: 1.5rem;
+    }
+}
