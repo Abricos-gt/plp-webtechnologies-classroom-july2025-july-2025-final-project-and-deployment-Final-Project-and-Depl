@@ -1,4 +1,4 @@
-.crops-container {
+ .crops-container {
     padding: 2rem 0;
 }
 
@@ -62,3 +62,128 @@
 }
 
 .crop-info p {
+    margin-bottom: 0.5rem;
+}
+
+.health-good {
+    color: #28a745;
+    font-weight: 500;
+}
+
+.health-excellent {
+    color: #20c997;
+    font-weight: 500;
+}
+
+.health-fair {
+    color: #ffc107;
+    font-weight: 500;
+}
+
+.crop-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-value {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2c5e1a;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.btn-outline {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: transparent;
+    border: 1px solid #2c5e1a;
+    border-radius: 5px;
+    color: #2c5e1a;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-outline:hover {
+    background-color: #2c5e1a;
+    color: white;
+}
+
+.crop-tasks {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.crop-tasks h3 {
+    color: #2c5e1a;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+}
+
+.task-checkbox {
+    margin-right: 1rem;
+}
+
+.task-content {
+    flex-grow: 1;
+}
+
+.task-content label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.task-due {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.task-priority {
+    padding: 0.25rem 0.5rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.task-priority.high {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.task-priority.medium {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.task-priority.low {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
