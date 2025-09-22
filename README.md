@@ -1,90 +1,74 @@
-# 📦 Final Assignment: Build, Organize, and Deploy a Multipage Website
+ # Agricultural Intelligence Dashboard
 
-You're now ready to bring everything together—HTML, CSS, JavaScript, planning, structure, and deployment. This final project challenges you to **conceptualize, build, and deploy a multi-page website** that is responsive, interactive, and ready for the real world.
+ #author
+ Abrha Gebrehiwet
+ PLP Web-development final project
 
-This assignment will guide you from planning your site all the way to deploying it online. Let’s make your project *production-worthy*! 🚀
+A comprehensive web application for farmers and agricultural professionals to monitor and manage farming operations.
 
----
+## Features
 
-## 🌐🎯 Part 1: Planning and Organizing a Multipage Website
+- **Dashboard**: Overview of key metrics and farm performance
+- **Crop Management**: Track crop health, growth stages, and tasks
+- **Weather Monitoring**: Forecasts, historical weather data, and alerts
+- **Market Analysis**: Commodity prices, trends, and news updates
+- **Responsive Design**: Works on desktop, tablet, and mobile devices
 
-Before you write any code, take time to plan:
+## Project Structure
 
-* Define your website's purpose (portfolio, product showcase, blog, etc.)
-* Outline 3–5 pages (e.g., Home, About, Services, Contact, Gallery)
-* Sketch or describe the layout of each page
-* Map out internal navigation (how pages link to one another)
+agricultural-dashboard/
+├── index.html # Home page
+├── dashboard.html # Main dashboard
+├── crops.html # Crop management
+├── weather.html # Weather information and forecasts
+├── market.html # Market data and price trends
+├── styles/
+│ ├── main.css # Global styles
+│ ├── dashboard.css # Dashboard-specific styles
+│ ├── crops.css # Crop management styles
+│ ├── weather.css # Weather page styles
+│ ├── market.css # Market page styles
+│ └── responsive.css # Responsive design styles
+├── js/
+│ ├── main.js # Global JavaScript
+│ ├── dashboard.js # Dashboard functionality
+│ ├── crops.js # Crop management functionality
+│ ├── weather.js # Weather functionality
+│ └── market.js # Market functionality
+├── images/ # Image assets
+└── README.md # Project documentation
 
-**Goal:** Show intentional structure and user journey across the site.
 
----
+## Technologies Used
 
-## 🌍💻 Part 2: Build the Website Using HTML5, CSS, and JavaScript
+- HTML5
+- CSS3 (Flexbox, Grid)
+- JavaScript (ES6+)
+- Chart.js for data visualization
 
-Using your plan, begin building:
+## Deployment
 
-* Use HTML5 for semantic structure
-* Apply CSS for responsive layout, styling, and animations
-* Use JavaScript to add interactivity (menus, forms, toggles, dynamic content)
+This project can be deployed to:
+- GitHub Pages
+- Netlify
+- Vercel
+- Any static hosting service
 
-Each page should:
+## Setup
 
-* Be mobile-responsive
-* Share a consistent layout/header/footer
-* Include at least one interactive element (e.g., form validation, toggle menu, animation on scroll)
+1. Clone or download the project files
+2. Open `index.html` in a web browser to view the application
+3. For deployment, upload all files to your hosting service
 
-**Goal:** Integrate everything you’ve learned in a cohesive, functioning project.
+## Browser Support
 
----
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
 
-## 🛠️🚀 Part 3: Best Practices for Code Organization
 
-Before deployment, refactor your project to follow production-friendly practices:
 
-* Organize files in folders (`/css`, `/js`, `/images`, etc.)
-* Write clean, modular, and commented code
-* Use meaningful file names and relative paths
-* Validate your HTML/CSS and test on different screen sizes
 
-**Goal:** Prepare your codebase to be readable, maintainable, and scalable.
 
----
 
-## 🌐🚀 Part 4: Introduction to Hosting and Deployment
-
-Once your project is complete, choose a method to **host your site online**.
-
-You can use:
-
-* **GitHub Pages** (great for portfolios and static sites)
-* **Netlify** (powerful CI/CD features and easy form support)
-* **Vercel** (lightning-fast deployment for frontend projects)
-
-Deploy your project and confirm that:
-
-* All links and scripts work
-* It loads properly on mobile and desktop
-* It has a clear, shareable URL
-
-**Goal:** Publish your work online and make it accessible to the world.
-
----
-
-## Deliverables
-
-1. A GitHub repository containing:
-
-   * Your complete project code, properly organized
-   * A `README.md` file explaining your project purpose, structure, and live URL
-2. A live deployed website (hosted via GitHub Pages, Netlify, or Vercel)
-
----
-
-## Outcome
-
-* Clarity and thoroughness of planning documentation
-* Proper use of HTML5, CSS, and JavaScript across multiple pages
-* Responsive and accessible design
-* Clean, well-organized, and commented code
-* Successful live deployment with a working link
-* Evidence of following best practices
