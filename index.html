@@ -3,220 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevPortfolio - Home</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Agricultural Intelligence Dashboard</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header with Navigation -->
     <header>
-        <div class="container header-container">
-            <a href="#" class="logo" data-page="home">DevPortfolio</a>
-            <div class="hamburger" id="hamburger">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="AgriIntel Logo">
+                <h1>Agricultural Intelligence</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="crops.html">Crops</a></li>
+                    <li><a href="weather.html">Weather</a></li>
+                    <li><a href="market.html">Market</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#" class="active" data-page="home">Home</a></li>
-                <li><a href="#" data-page="about">About</a></li>
-                <li><a href="#" data-page="projects">Projects</a></li>
-                <li><a href="#" data-page="services">Services</a></li>
-                <li><a href="#" data-page="contact">Contact</a></li>
-            </ul>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Home Page -->
-        <section id="home" class="page active">
-            <div class="container">
-                <div class="hero">
-                    <div class="hero-content">
-                        <h1>Hi, I'm Alex Johnson</h1>
-                        <p>I'm a frontend developer specializing in creating responsive, user-friendly websites with modern technologies. I transform ideas into engaging digital experiences.</p>
-                        <a href="#" class="btn" data-page="projects">View My Work</a>
-                    </div>
-                    <div class="hero-image">
-                        <img src="https://placehold.co/600x400/2563eb/ffffff?text=Developer+Image" alt="Developer Image">
-                    </div>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Optimize Your Farming Operations with Data-Driven Insights</h2>
+                <p>Monitor crops, track weather patterns, analyze soil conditions, and maximize your yield with our comprehensive agricultural intelligence platform.</p>
+                <a href="dashboard.html" class="btn-primary">View Dashboard</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Crop Monitoring</h3>
+                    <p>Track growth stages, health indicators, and predict yields with our advanced monitoring system.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌤️</div>
+                    <h3>Weather Forecasting</h3>
+                    <p>Access hyperlocal weather data and forecasts to plan your farming activities effectively.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌱</div>
+                    <h3>Soil Analysis</h3>
+                    <p>Get detailed insights into soil moisture, nutrient levels, and recommendations for improvement.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Market Trends</h3>
+                    <p>Stay informed about commodity prices and market trends to maximize your profits.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- About Page -->
-        <section id="about" class="page">
-            <div class="container">
-                <div class="section-title">
-                    <h2>About Me</h2>
-                    <p>Learn more about my background, skills, and experience</p>
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Farmers Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <p>"This dashboard has helped me increase my yield by 23% while reducing water usage by 15%."</p>
+                    <div class="testimonial-author">- Rajesh Kumar, Wheat Farmer</div>
                 </div>
-                <div class="about-content">
-                    <div style="text-align: center; margin-bottom: 40px;">
-                        <img src="https://placehold.co/400x400/2563eb/ffffff?text=Alex+Johnson" alt="Profile Photo" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover;">
-                    </div>
-                    <p style="max-width: 800px; margin: 0 auto 30px; text-align: center;">
-                        I'm a passionate frontend developer with 5 years of experience creating modern, responsive websites and web applications. I specialize in HTML, CSS, JavaScript, and React, with a strong focus on user experience and performance.
-                    </p>
-                    <p style="max-width: 800px; margin: 0 auto 40px; text-align: center;">
-                        When I'm not coding, you can find me hiking, reading tech blogs, or experimenting with new web technologies. I believe in continuous learning and always strive to expand my skill set.
-                    </p>
-                    
-                    <h3 style="text-align: center; margin-bottom: 30px;">My Skills</h3>
-                    <div class="skills-grid">
-                        <div class="skill-card">
-                            <i>💻</i>
-                            <h3>Frontend Development</h3>
-                            <p>HTML, CSS, JavaScript, React, Vue.js</p>
-                        </div>
-                        <div class="skill-card">
-                            <i>📱</i>
-                            <h3>Responsive Design</h3>
-                            <p>Creating websites that work on all devices</p>
-                        </div>
-                        <div class="skill-card">
-                            <i>⚡</i>
-                            <h3>Performance Optimization</h3>
-                            <p>Fast loading and smooth interactions</p>
-                        </div>
-                        <div class="skill-card">
-                            <i>🔧</i>
-                            <h3>Tools & Technologies</h3>
-                            <p>Git, Webpack, Figma, VS Code</p>
-                        </div>
-                    </div>
+                <div class="testimonial">
+                    <p>"The weather predictions are incredibly accurate for my region. It's like having a personal meteorologist."</p>
+                    <div class="testimonial-author">- Maria Gonzalez, Organic Farm Owner</div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Projects Page -->
-        <section id="projects" class="page">
-            <div class="container">
-                <div class="section-title">
-                    <h2>My Projects</h2>
-                    <p>Here are some of the projects I've worked on recently</p>
-                </div>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-img" style="background-image: url('https://placehold.co/600x400/3b82f6/ffffff?text=E-Commerce+Site');"></div>
-                        <div class="project-content">
-                            <h3>E-Commerce Website</h3>
-                            <p>A fully responsive online store with product filtering and cart functionality.</p>
-                            <a href="#" class="btn">View Project</a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-img" style="background-image: url('https://placehold.co/600x400/3b82f6/ffffff?text=Travel+App');"></div>
-                        <div class="project-content">
-                            <h3>Travel Planning App</h3>
-                            <p>An interactive app for planning trips and exploring destinations.</p>
-                            <a href="#" class="btn">View Project</a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-img" style="background-image: url('https://placehold.co/600x400/3b82f6/ffffff?text=Finance+Dashboard');"></div>
-                        <div class="project-content">
-                            <h3>Finance Dashboard</h3>
-                            <p>Data visualization dashboard for tracking expenses and investments.</p>
-                            <a href="#" class="btn">View Project</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services Page -->
-        <section id="services" class="page">
-            <div class="container">
-                <div class="section-title">
-                    <h2>My Services</h2>
-                    <p>What I can help you with</p>
-                </div>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <i>🌐</i>
-                        <h3>Website Development</h3>
-                        <p>Custom websites built with modern technologies, optimized for performance and SEO.</p>
-                    </div>
-                    <div class="service-card">
-                        <i>📱</i>
-                        <h3>Responsive Design</h3>
-                        <p>Websites that look great and work perfectly on all devices and screen sizes.</p>
-                    </div>
-                    <div class="service-card">
-                        <i>⚡</i>
-                        <h3>Performance Optimization</h3>
-                        <p>Improving loading times and overall performance of existing websites.</p>
-                    </div>
-                    <div class="service-card">
-                        <i>🛠️</i>
-                        <h3>Maintenance & Support</h3>
-                        <p>Ongoing website maintenance, updates, and technical support.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Page -->
-        <section id="contact" class="page">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Get In Touch</h2>
-                    <p>Have a project in mind or want to discuss potential collaboration?</p>
-                </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Your Message</label>
-                            <textarea id="message" class="form-control" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>DevPortfolio</h3>
-                    <p>Creating beautiful, functional websites that help businesses grow online.</p>
+                    <h3>Agricultural Intelligence</h3>
+                    <p>Data-driven solutions for modern farming</p>
                 </div>
                 <div class="footer-section">
-                    <h3>Contact Info</h3>
-                    <p>Email: hello@devportfolio.com</p>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="crops.html">Crops</a></li>
+                        <li><a href="weather.html">Weather</a></li>
+                        <li><a href="market.html">Market</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@agriintel.com</p>
                     <p>Phone: +1 (555) 123-4567</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Follow Me</h3>
-                    <div class="social-links">
-                        <a href="#">LinkedIn</a>
-                        <a href="#">GitHub</a>
-                        <a href="#">Twitter</a>
-                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 DevPortfolio. All rights reserved.</p>
+                <p>&copy; 2023 Agricultural Intelligence. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
