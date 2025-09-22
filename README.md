@@ -1,18 +1,29 @@
- # Agricultural Intelligence Dashboard
+# 🌱 Agricultural Intelligence Dashboard
 
- #author
- Abrha Gebrehiwet
- PLP Web-development final project
+> A comprehensive web application for farmers and agricultural professionals to **monitor** and **manage farming operations** efficiently.
 
-A comprehensive web application for farmers and agricultural professionals to monitor and manage farming operations.
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge)](https://agricultural-intelligence-dashboard.netlify.app/)  
+*(Click the badge above to view the live project)*
 
-## Features
+---
 
-- **Dashboard**: Overview of key metrics and farm performance
-- **Crop Management**: Track crop health, growth stages, and tasks
-- **Weather Monitoring**: Forecasts, historical weather data, and alerts
-- **Market Analysis**: Commodity prices, trends, and news updates
-- **Responsive Design**: Works on desktop, tablet, and mobile devices
+## 👤 Author  
+**Abrha Gebrehiwet**  
+PLP Web-Development Final Project
+
+---
+
+## 🚀 Features
+- **Dashboard** – Overview of key metrics and farm performance
+- **Crop Management** – Track crop health, growth stages, and tasks
+- **Weather Monitoring** – Forecasts, historical weather data, and alerts
+- **Market Analysis** – Commodity prices, trends, and news updates
+- **Responsive Design** – Works seamlessly on desktop, tablet, and mobile devices
+
+---
+
+## 🗂️ Project Structure
+
 
 ## Project Structure
 
@@ -39,20 +50,20 @@ agricultural-dashboard/
 └── README.md # Project documentation
 
 
-## Technologies Used
+## 🛠️ Technologies Used
+- **HTML5**
+- **CSS3** (Flexbox, Grid)
+- **JavaScript (ES6+)**
+- **Chart.js** – Data visualization
 
-- HTML5
-- CSS3 (Flexbox, Grid)
-- JavaScript (ES6+)
-- Chart.js for data visualization
+## 🌐 Deployment
+This project can be deployed to any static hosting service:
+- [GitHub Pages](https://pages.github.com/)
+- [Netlify](https://www.netlify.com/) *(current deployment)*
+- [Vercel](https://vercel.com/)
 
-## Deployment
+Live Demo 👉 **[Agricultural Intelligence Dashboard](https://agricultural-intelligence-dashboard.netlify.app/)**
 
-This project can be deployed to:
-- GitHub Pages
-- Netlify
-- Vercel
-- Any static hosting service
 
 ## Setup
 
