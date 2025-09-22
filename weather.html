@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast - Agricultural Intelligence</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/weather.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="AgriIntel Logo">
+                <h1>Agricultural Intelligence</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="crops.html">Crops</a></li>
+                    <li><a href="weather.html" class="active">Weather</a></li>
+                    <li><a href="market.html">Market</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="weather-container">
+        <div class="container">
+            <h2>Weather Forecast & Analysis</h2>
+            
+            <div class="location-selector">
+                <label for="location">Select Location:</label>
+                <select id="location">
+                    <option value="north-field">North Field</option>
+                    <option value="south-field">South Field</option>
+                    <option value="east-field">East Field</option>
+                    <option value="west-field">West Field</option>
+                </select>
+            </div>
+            
+            <div class="current-weather">
+                <h3>Current Conditions</h3>
+                <div class="weather-card">
+                    <div class="weather-icon">☀️</div>
+                    <div class="weather-details">
+                        <p class="temperature">78°F</p>
+                        <p class="conditions">Sunny</p>
+                        <p class="humidity">Humidity: 45%</p>
+                        <p class="wind">Wind: 5 mph NE</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="forecast-section">
+                <h3>7-Day Forecast</h3>
+                <div class="forecast-grid">
+                    <div class="forecast-day">
+                        <p class="day">Today</p>
+                        <div class="forecast-icon">☀️</div>
+                        <p class="forecast-temp">78° / 62°</p>
+                        <p class="precipitation">10%</p>
+                    </div>
+                    <div class="forecast-day">
+                        <p class="day">Tue</p>
+                        <div class="forecast-icon">⛅</div>
+                        <p class="forecast-temp">82° / 65°</p>
+                        <p class="precipitation">20%</p>
+                    </div>
+                    <div class="forecast-day">
+                        <p class="day">Wed</p>
+                        <div class="forecast-icon">🌧️</div>
+                        <p class="forecast-temp">75° / 60°</p>
+                        <p class="precipitation">80%</p>
+                    </div>
+                    <div class="forecast-day">
+                        <p class="day">Thu</p>
+                        <div class="forecast-icon">🌧️</div>
+                        <p class="forecast-temp">72° / 58°</p>
+                        <p class="precipitation">70%</p>
+                    </div>
+                    <div class="forecast-day">
+                        <p class="day">Fri</p>
+                        <div class="forecast-icon">⛅</div>
+                        <p class="forecast-temp">76° / 61°</p>
+                        <p class="precipitation">30%</p>
+                    </div>
+                    <div class="forecast-day">
+                        <p class="day">Sat</p>
+                        <div class="forecast-icon">☀️</div>
+                        <p class="forecast-temp">80° / 64°</p>
+                        <p class="precipitation">0%</p>
+                    </div>
+                    <div class="forecast-day">
+                        <p class="day">Sun</p>
+                        <div class="forecast-icon">☀️</div>
+                        <p class="forecast-temp">82° / 66°</p>
+                        <p class="precipitation">0%</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="weather-charts">
+                <div class="chart-container">
+                    <h3>Temperature Trends</h3>
+                    <canvas id="temperatureChart"></canvas>
+                </div>
+                
+                <div class="chart-container">
+                    <h3>Precipitation Forecast</h3>
+                    <canvas id="precipitationChart"></canvas>
+                </div>
+            </div>
+            
+            <div class="weather-alerts">
+                <h3>Weather Alerts</h3>
+                <div class="alert-card warning">
+                    <div class="alert-icon">⚠️</div>
+                    <div class="alert-content">
+                        <h4>Heavy Rain Advisory</h4>
+                        <p>Heavy rainfall expected Wednesday and Thursday. Potential for 2-3 inches of rain.</p>
+                        <p class="alert-time">Issued: May 29, 2023 | Valid: June 1-2, 2023</p>
+                    </div>
+                </div>
+                
+                <div class="alert-card info">
+                    <div class="alert-icon">ℹ️</div>
+                    <div class="alert-content">
+                        <h4>Frost Advisory</h4>
+                        <p>Potential for frost in low-lying areas early next week. Protect sensitive crops.</p>
+                        <p class="alert-time">Issued: May 28, 2023 | Valid: June 5-6, 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Agricultural Intelligence</h3>
+                    <p>Data-driven solutions for modern farming</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="crops.html">Crops</a></li>
+                        <li><a href="weather.html">Weather</a></li>
+                        <li><a href="market.html">Market</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@agriintel.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Agricultural Intelligence. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>
