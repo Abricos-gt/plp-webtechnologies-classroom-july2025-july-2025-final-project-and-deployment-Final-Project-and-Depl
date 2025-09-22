@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Agricultural Intelligence</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="AgriIntel Logo">
+                <h1>Agricultural Intelligence</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dashboard.html" class="active">Dashboard</a></li>
+                    <li><a href="crops.html">Crops</a></li>
+                    <li><a href="weather.html">Weather</a></li>
+                    <li><a href="market.html">Market</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="dashboard-container">
+        <div class="container">
+            <h2>Farm Overview Dashboard</h2>
+            
+            <div class="dashboard-grid">
+                <div class="stat-card">
+                    <h3>Total Acreage</h3>
+                    <p class="stat-value">1,250</p>
+                    <p class="stat-unit">acres</p>
+                </div>
+                
+                <div class="stat-card">
+                    <h3>Current Yield</h3>
+                    <p class="stat-value">175</p>
+                    <p class="stat-unit">bu/acre</p>
+                </div>
+                
+                <div class="stat-card">
+                    <h3>Soil Moisture</h3>
+                    <p class="stat-value">42%</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 42%"></div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <h3>Crop Health</h3>
+                    <p class="stat-value">88%</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 88%"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="charts-grid">
+                <div class="chart-container">
+                    <h3>Yield Forecast</h3>
+                    <canvas id="yieldChart"></canvas>
+                </div>
+                
+                <div class="chart-container">
+                    <h3>Crop Distribution</h3>
+                    <canvas id="cropDistributionChart"></canvas>
+                </div>
+            </div>
+            
+            <div class="recent-activities">
+                <h3>Recent Activities</h3>
+                <ul>
+                    <li>
+                        <span class="activity-icon">💧</span>
+                        <div class="activity-details">
+                            <p>Irrigation system activated in North Field</p>
+                            <span class="activity-time">2 hours ago</span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="activity-icon">🌱</span>
+                        <div class="activity-details">
+                            <p>Fertilizer application completed in South Field</p>
+                            <span class="activity-time">1 day ago</span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="activity-icon">📊</span>
+                        <div class="activity-details">
+                            <p>Soil analysis report generated for West Field</p>
+                            <span class="activity-time">2 days ago</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Agricultural Intelligence</h3>
+                    <p>Data-driven solutions for modern farming</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="crops.html">Crops</a></li>
+                        <li><a href="weather.html">Weather</a></li>
+                        <li><a href="market.html">Market</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@agriintel.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Agricultural Intelligence. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
